@@ -1,5 +1,3 @@
-import React from "react";
-
 import Email from "./assets/email.svg";
 import Linkedin from "./assets/linkedin.svg";
 

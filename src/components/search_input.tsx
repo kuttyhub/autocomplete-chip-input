@@ -1,4 +1,4 @@
-import React, { ChangeEvent, KeyboardEvent, useRef, useState } from "react";
+import { ChangeEvent, KeyboardEvent, useRef, useState } from "react";
 import ListItem from "./list_item";
 import { TUser } from "../data/user_list";
 import { composeClassName } from "../utils";

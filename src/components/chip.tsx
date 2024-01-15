@@ -1,5 +1,3 @@
-import React from "react";
-
 type Tprop = {
   title: string;
   avatar: string;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { USERS as userData, TUser } from "../data/user_list";
 import Chip from "./chip";

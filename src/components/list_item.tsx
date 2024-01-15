@@ -1,4 +1,3 @@
-import React from "react";
 import { composeClassName } from "../utils";
 
 interface Iprop {
