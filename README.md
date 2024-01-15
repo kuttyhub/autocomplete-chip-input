@@ -2,6 +2,12 @@
 
 Welcome to the Autocomplete Chip Input project! This project provides a user-friendly input experience with the ability to select items from a dynamic list and turn them into chips. The project is implemented in React and TypeScript, ensuring a clean and maintainable codebase.
 
+## Demo
+
+Check out the live demo: [https://autocomplete-chip-input.netlify.app/](https://autocomplete-chip-input.netlify.app/)
+
+> **_NOTE_:** The current demo does not support responsiveness. Please view it on a desktop or laptop for the best experience.
+
 ## Features
 
 1. **Autocomplete Input Field:**
@@ -21,12 +27,13 @@ Welcome to the Autocomplete Chip Input project! This project provides a user-fri
    - Clicking the "X" icon removes the chip and adds the corresponding item back to the autocomplete list.
 
 4. **Backspace Functionality:**
+
    - When the input field is blank and the user presses backspace, the last chip will be removed and moved to edit.
 
 5. **Keyboard Navigation**
-  - Use the arrow keys (Up and Down) to navigate through the suggestion list.
-  - Press Enter to select the highlighted suggestion as a chip.
 
+- Use the arrow keys (Up and Down) to navigate through the suggestion list.
+- Press Enter to select the highlighted suggestion as a chip.
 
 ## Getting Started
 
