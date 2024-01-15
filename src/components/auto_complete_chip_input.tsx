@@ -5,7 +5,7 @@ import Chip from "./chip";
 import SearchInput from "./search_input";
 import { composeClassName } from "../utils";
 
-const ChipSearch = () => {
+const AutocompleteChipInput = () => {
   const [userList, setUserList] = useState<TUser[]>([]);
   const [selectedUsers, setSelectedUsers] = useState<TUser[]>([]);
 
@@ -57,4 +57,4 @@ const ChipSearch = () => {
   );
 };
 
-export default ChipSearch;
+export default AutocompleteChipInput;

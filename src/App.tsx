@@ -5,9 +5,9 @@ import Linkedin from "./assets/linkedin.svg";
 
 import ListItem from "./components/list_item";
 import { USERS as userData } from "./data/user_list";
+import AutocompleteChipInput from "./components/auto_complete_chip_input";
 
 import "./App.css";
-import ChipSearch from "./components/chip_search";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           ))}
         </div>
 
-        <ChipSearch />
+        <AutocompleteChipInput />
       </div>
       <footer>
         <p>&#10084; Developed by Nishanth S</p>
