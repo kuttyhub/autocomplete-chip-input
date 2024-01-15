@@ -32,8 +32,8 @@ Check out the live demo: [https://autocomplete-chip-input.netlify.app/](https://
 
 5. **Keyboard Navigation**
 
-- Use the arrow keys (Up and Down) to navigate through the suggestion list.
-- Press Enter to select the highlighted suggestion as a chip.
+   - Use the arrow keys (Up and Down) to navigate through the suggestion list.
+   - Press Enter to select the highlighted suggestion as a chip.
 
 ## Getting Started
 
