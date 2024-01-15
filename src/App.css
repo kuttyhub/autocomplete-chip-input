@@ -1,42 +1,209 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.user-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #00000014;
+  height: 90vh;
+  overflow: auto;
 }
 
-.card {
-  padding: 2em;
+.chip-search-container {
+  flex: 3;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
 }
 
-.read-the-docs {
-  color: #888;
+.chip-search-container--focus {
+  outline: 1px solid lightblue;
+}
+
+.custom-form-control {
+  position: relative;
+  overflow: visible;
+  width: 30rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.search-text-input {
+  width: 100%;
+  border: none;
+}
+
+.search-text-input:focus {
+  outline: none;
+}
+
+.chip {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  height: fit-content;
+  max-width: 12rem;
+  background-color: #00000014;
+  border-radius: 1.9rem;
+  padding-right: 0.7rem;
+}
+
+.chip > .avatar > img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.chip > #title {
+  flex: 2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.chip > button {
+  min-height: 25px;
+  height: 25px;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.drop-down-list {
+  position: absolute;
+  top: 180%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+
+  height: 60vh;
+  overflow: auto;
+}
+
+.drop-down-list--active {
+  border: 1px solid #00000014;
+}
+
+.drop-down-item-container {
+  border-radius: 0.5rem;
+}
+
+.drop-down-item-container--focus {
+  background-color: gray;
+}
+
+.drop-down-item {
+  display: flex;
+  gap: 0.1rem;
+  align-items: center;
+  /* justify-content: space-between; */
+  text-align: left;
+  cursor: pointer;
+  padding: 0rem 0.5rem;
+}
+
+.drop-down-item > .avatar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.drop-down-item > #title {
+  flex: 4;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 600;
+}
+
+.drop-down-item > #email {
+  flex: 2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.drop-down-item:hover {
+  background-color: gray;
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+}
+.avatar > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c5c5c5 #f6f6f6;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f6f6f6;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #c5c5c5;
+  border-radius: 20px;
+  border: 3px solid #f6f6f6;
+}
+
+footer {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000014;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+footer > a > img {
+  height: 15px;
+  object-fit: cover;
+  object-position: center;
 }
