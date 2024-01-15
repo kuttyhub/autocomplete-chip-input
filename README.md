@@ -23,6 +23,11 @@ Welcome to the Autocomplete Chip Input project! This project provides a user-fri
 4. **Backspace Functionality:**
    - When the input field is blank and the user presses backspace, the last chip will be removed and moved to edit.
 
+5. **Keyboard Navigation**
+  - Use the arrow keys (Up and Down) to navigate through the suggestion list.
+  - Press Enter to select the highlighted suggestion as a chip.
+
+
 ## Getting Started
 
 1. Clone the repository:
@@ -41,7 +46,7 @@ Welcome to the Autocomplete Chip Input project! This project provides a user-fri
 3. Build and run the project:
 
    ```bash
-   npm start
+   npm run dev
    ```
 
 4. Open your browser and navigate to `http://localhost:5173/` to view the application.
